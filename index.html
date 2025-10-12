@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet</title>
+    <!-- Google fonts -->
+        <!-- Adlam display -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- Sora -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- DaisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font awsome -->
+    <script src="https://kit.fontawesome.com/638f809613.js" crossorigin="anonymous"></script>
+    <!-- css -->
+     <style>
+        .sora{
+            font-family: "Sora", sans-serif;
+        }
+        .adlam-display{
+            font-family: "ADLaM Display", sans-serif;
+        }
+        .primary-color{
+            background-color: #FFDC26;
+        }
+     </style>
+</head>
+
+<body class="">
+    <header class="">
+        <nav class="bg-orange-50">
+            <div class="navbar bg-orange-50 md:container mx-auto">
+            <div class="navbar-start">
+                <div class="dropdown ">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                </div>
+                <ul
+                    tabindex="-1"
+                    class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow bg-orange-50 sora">
+                    <li><a>Find a pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                </ul>
+                </div>
+                <div></div>
+                <img src="c1-assets/logo-header.png" alt="">
+                <small><a class="invisible text-3xl adlam-display lg:visible">Browse<span class="text-yellow-300">4</span>pets</a></small>
+            </div>
+            
+            <div class="navbar-center hidden lg:flex">
+                
+                <ul class="menu menu-horizontal px-1 sora text-xl">
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end sora space-x-4 invisible lg:visible">
+                <i class="fa-solid fa-bell text-2xl"></i>
+                <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+                <a class="btn bg-orange-50 border border-yellow-300 text-lg rounded-md">Login</a>
+                <a class="btn primary-color text-lg rounded-md">Register</a>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero section -->
+         <section class="my-24 md:container mx-auto">
+            <div
+                class=" h-200 md:h-160 bg-contain bg-no-repeat bg-right-bottom md:bg-right-top"
+                style="background-image: url(./c1-assets/cat-big.png);"
+                >
+                <div class=""></div>
+                <div class="text-center lg:text-left ">
+                    <div class="w-full lg:w-6/12">
+                    <h1 class="mb-5 text-6xl font-bold adlam-display ">Pamper Your Pet, Because They Deserve the Bes</h1>
+                    <p class="mb-5 text-xl sora text-gray-500">
+                        Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+                    </p>
+                    <button class=" btn primary-color text-lg rounded-md">Find a pet</button>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- Category section -->
+          <section class="md:container mx-auto">
+            <h3 class="text-4xl font-bold adlam-display">Browse By Categories</h3>
+            <!-- card -->
+            <div class="grid grid-cols-1 md:grid-cols-3 md:space-y-5 lg:grid-cols-6 gap-10 my-24 sm:mx-5">
+                <!-- card 1 -->
+                 <div>
+                    <div class="card  bg-[#F9DF8A] py-10">
+                        <figure>
+                            <div class="avatar bg-white rounded-full p-5">
+                            <div class="rounded">
+                                <img src="./c1-assets/dog-cartoon.png" />
+                            </div>
+                            </div>
+                        </figure>
+                        <div class="card-body text-center">
+                            <h2 class="text-lg justify-center adlam-display">Dog</h2>
+                            <p class="sora text-lg">3 items</p>
+                        </div>
+                        </div>
+                 </div>
+                 <!-- card 2 -->
+                  <div>
+                    <div class="card  bg-[#F9DF8A] py-10">
+                        <figure>
+                            <div class="avatar bg-white rounded-full p-5">
+                            <div class="rounded">
+                                <img src="./c1-assets/fish-cartoon.png" />
+                            </div>
+                            </div>
+                        </figure>
+                        <div class="card-body text-center">
+                            <h2 class="text-lg justify-center adlam-display">Fish</h2>
+                            <p class="sora text-lg">3 items</p>
+                        </div>
+                        </div>
+                 </div>
+                 <!-- card 3 -->
+                  <div>
+                    <div class="card  bg-[#F9DF8A] py-10">
+                        <figure>
+                            <div class="avatar bg-white rounded-full p-5">
+                            <div class="rounded">
+                                <img src="./c1-assets/cat-cartoon.png" />
+                            </div>
+                            </div>
+                        </figure>
+                        <div class="card-body text-center">
+                            <h2 class="text-lg justify-center adlam-display">Cat</h2>
+                            <p class="sora text-lg">3 items</p>
+                        </div>
+                        </div>
+                 </div>
+                 <!-- card 4 -->
+                  <div>
+                    <div class="card  bg-[#F9DF8A] py-10">
+                        <figure>
+                            <div class="avatar bg-white rounded-full p-5">
+                            <div class="rounded">
+                                <img src="./c1-assets/bird-cartoon.png" />
+                            </div>
+                            </div>
+                        </figure>
+                        <div class="card-body text-center">
+                            <h2 class="text-lg justify-center adlam-display">Birds</h2>
+                            <p class="sora text-lg">3 items</p>
+                        </div>
+                        </div>
+                 </div>
+                 <!-- card 5 -->
+                  <div>
+                    <div class="card  bg-[#F9DF8A] py-10">
+                        <figure>
+                            <div class="avatar bg-white rounded-full p-5">
+                            <div class="rounded">
+                                <img src="./c1-assets/mouse-cartoon.png" />
+                            </div>
+                            </div>
+                        </figure>
+                        <div class="card-body text-center">
+                            <h2 class="text-lg justify-center adlam-display">Small pet</h2>
+                            <p class="sora text-lg">3 items</p>
+                        </div>
+                        </div>
+                 </div>
+                 <!-- card 6 -->
+                  <div>
+                    <div class="card bg-[#F9DF8A] py-10">
+                        <figure>
+                            <div class="avatar bg-white rounded-full p-5">
+                            <div class="rounded">
+                                <img src="./c1-assets/rabbit-cartoon.png" />
+                            </div>
+                            </div>
+                        </figure>
+                        <div class="card-body text-center">
+                            <h2 class="text-lg justify-center adlam-display">Rabit</h2>
+                            <p class="sora text-lg">3 items</p>
+                        </div>
+                        </div>
+                 </div>
+            </div>
+          </section>
+    </main>
+</body>
+</html>
